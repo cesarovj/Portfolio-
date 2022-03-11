@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+    margin-top: 4rem;
+}
+
+.my-name,
+.my-role {
+    color: #181818;
+    line-height: 0;
+    font-size: 12vw;
+    letter-spacing: -0.5vw;
+}
+
+.header-name {
+    padding-top: 2rem;
+    text-align: right;
+    margin-right: 0.5rem;
+}
+
+.header-role {
+    text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        margin-top: 8rem;
+    }
+    .home-arrow {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-top: 6rem;
+    }
+    .my-name,
+    .my-role {
+        line-height: 0.75;
+        font-size: 17vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-top: 5rem;
+    }
+
+    .my-name,
+    .my-role {
+        line-height: 1;
+    }
+    .home-arrow {
+        margin-top: 30%;
+    }
+}

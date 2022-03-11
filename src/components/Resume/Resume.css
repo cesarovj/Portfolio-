@@ -1,0 +1,105 @@
+.my-resume {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 5rem 5rem 0 5rem;
+    border-bottom: 1px dashed black;
+}
+
+.resume-text {
+    line-height: 0;
+    font-size: 12vw;
+    letter-spacing: -0.5vw;
+    color: #181818;
+}
+
+.resume-text2 {
+    margin-top: -1rem;
+    margin-bottom: 6rem;
+}
+
+.resume-arrow {
+    margin-top: 7.5%;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.resume-img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.res-img {
+    width: 100%;
+    height: 100%;
+}
+
+.resume-btn:hover {
+    cursor: pointer;
+    color: #f0f0f0;
+    box-shadow: inset 300px 0 0 0 #d53f41;
+}
+
+@media screen and (max-width: 900px) {
+    .my-resume {
+        margin-top: 8rem;
+    }
+    .resume-text {
+        font-size: 14vw;
+    }
+    .resume-arrow {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .resume-text {
+        font-size: 17vw;
+    }
+    .resume-arrow {
+        margin-top: 30%;
+    }
+    .resume {
+        height: 100vh;
+        margin-top: 10rem;
+    }
+    .resume-container {
+        position: absolute;
+        margin-top: 40rem;
+        left: 15%;
+    }
+
+    .res-img {
+        width: 150%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .resume-arrow {
+        margin-top: 35%;
+    }
+    .resume-container {
+        margin-top: 27rem;
+    }
+    .resume {
+        margin-top: -25rem;
+        height: 150vh;
+    }
+}

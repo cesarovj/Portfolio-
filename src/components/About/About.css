@@ -1,0 +1,175 @@
+.about-container {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about-text {
+    line-height: 0;
+    font-size: 12vw;
+    letter-spacing: -0.5vw;
+    color: #181818;
+}
+
+.myself {
+    margin-top: -3rem;
+}
+
+.about-arrow {
+    margin-top: -5.5%;
+}
+
+.container-text {
+    font-size: 3vw;
+    color: #3d3d3d;
+    font-weight: lighter;
+    position: absolute;
+}
+
+.text1 {
+    top: 120vh;
+    left: 10%;
+}
+
+.text2 {
+    top: 145vh;
+    right: 10%;
+}
+
+.text3 {
+    top: 165vh;
+    left: 10%;
+}
+
+.sub-about {
+    line-height: 0;
+    font-size: 8vw;
+    letter-spacing: -0.5vw;
+    color: #181818;
+}
+
+.about2 {
+    position: absolute;
+    top: 200vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text4 {
+    top: 30vh;
+    right: 15%;
+}
+
+.dog {
+    position: absolute;
+    top: 22vh;
+    left: 15%;
+}
+
+@media screen and (max-width: 1240px) {
+    .dog {
+        top: 28vh;
+        left: 15%;
+    }
+    img {
+        width: 85%;
+    }
+    .text4 {
+        top: 20vh;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-arrow {
+        margin-top: 5%;
+    }
+    .text4 {
+        top: 15vh;
+        left: 25%;
+    }
+
+    .dog {
+        top: 25vh;
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text1 {
+        top: 100vh;
+    }
+
+    .text2 {
+        top: 120vh;
+    }
+
+    .text3 {
+        top: 140vh;
+    }
+    .about2 {
+        top: 170vh;
+    }
+
+    .text4 {
+        top: 16vh;
+        left: 28%;
+    }
+    .dog {
+        left: auto;
+        top: 30vh;
+    }
+    .about-container {
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-arrow {
+        margin-top: 15%;
+    }
+    .about-container {
+        margin-top: 10rem;
+    }
+    .about-text {
+        font-size: 16vw;
+    }
+    .myself {
+        margin-top: -1rem;
+    }
+    .container-text {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-text {
+        font-size: 17vw;
+    }
+    .myself {
+        margin-top: -2rem;
+    }
+    .text4 {
+        top: 12vh;
+        left: auto;
+    }
+    .dog {
+        top: 25vh;
+        width: 75%;
+    }
+
+    .text2 {
+        left: 25%;
+    }
+
+    .container-text {
+        font-size: 5vw;
+    }
+}
