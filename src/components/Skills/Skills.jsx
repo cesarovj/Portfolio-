@@ -20,7 +20,7 @@ const Skills = () => {
             <div className='skills-boxes'>
                 <div className='skill-box'>
                     <h1 className='skill-title'>JavaScript</h1>
-                    <p className='skill-desc'>For interactionS with the DOM</p>
+                    <p className='skill-desc'>For interactions with the DOM</p>
                     <p className='skill-desc'>--</p>
                 </div>
                 <div className='skill-box'>
