@@ -7,6 +7,7 @@ import linkedList from '../../assets/linkedlist.png';
 import pokeSearch from '../../assets/pokesearch.png';
 import portfolio from '../../assets/portfolio.png';
 import snakeGS from '../../assets/snakeGS.png';
+import busyBoard from '../../assets/Screenshot from 2022-03-24 13-10-20.png'
 
 const Work = () => {
     const workTimeline = gsap.timeline();
@@ -151,6 +152,34 @@ const Work = () => {
                                     <p className='tech-stack'>
                                         JavaScript / HTML5 / CSS3
                                     </p>
+                                </div>
+                            </a>
+                        </div>
+                    <div className='work-item'>
+                            <a
+                                target='_blank'
+                                href='https://fervent-goodall-5572d0.netlify.app/'
+                            >
+                                <div className='work-header'>
+                                    <p className='work-title'>
+                                        Linked List Visualizer
+                                    </p>
+                                </div>
+                                <div className='work-img '>
+                                    <img
+                                        className='work-img2'
+                                        src={busyBoard}
+                                        alt=''
+                                    />
+                                    <div className='img-overlay'>
+                                        <p className='img-desc'>
+                                            A simple easy-to-use admin dashboard. This project helped me learn about React UI libraries, Material UI, and how to incorporate charts into an application, Recharts.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className='work-footer'>
+                                    <p className='tech-stack'>React / Material UI / Recharts</p>
                                 </div>
                             </a>
                         </div>
