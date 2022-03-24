@@ -156,18 +156,15 @@ const Work = () => {
                             </a>
                         </div>
                     <div className='work-item'>
-                            <a
-                                target='_blank'
-                                href='https://fervent-goodall-5572d0.netlify.app/'
-                            >
+                            
                                 <div className='work-header'>
                                     <p className='work-title'>
-                                        Linked List Visualizer
+                                        Busy Board
                                     </p>
                                 </div>
                                 <div className='work-img '>
                                     <img
-                                        className='work-img2'
+                                        className='work-img6'
                                         src={busyBoard}
                                         alt=''
                                     />
@@ -181,7 +178,7 @@ const Work = () => {
                                 <div className='work-footer'>
                                     <p className='tech-stack'>React / Material UI / Recharts</p>
                                 </div>
-                            </a>
+                           
                         </div>
                         <div className='work-item'>
                             <div className='work-header'>
