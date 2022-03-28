@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 480px) {
     .resume-arrow {
-        margin-top: 30%;
+        margin-top: 27%;
     }
     .resume-container {
         margin-top: 27rem;
@@ -103,6 +103,6 @@
         height: 150vh;
     }
     .resume-text {
-        font-size: 11vw;
+        font-size: 10vw;
     }
 }
