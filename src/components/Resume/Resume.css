@@ -102,4 +102,7 @@
         margin-top: -25rem;
         height: 150vh;
     }
+    .resume-text {
+        font-size: 11vw;
+    }
 }
