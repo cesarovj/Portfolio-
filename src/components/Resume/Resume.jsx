@@ -32,7 +32,7 @@ const Resume = () => {
                     My
                 </p>
                 <p ref={(el) => (p2 = el)} className='resume-text resume-text2'>
-                    Resume<span className='cursor'></span>
+                    Resume<span className='cursor resume-cursor'></span>
                 </p>
             </div>
             <div
