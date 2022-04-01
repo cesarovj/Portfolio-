@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import Navbar from '../Navbar/Navbar';
 import './Resume.css';
-import resumeImg from '../../assets/resumeImg.jpeg';
+import resumeImg from '../../assets/resumeImg.jpg';
 import resumePdf from '../../assets/resumePdf.pdf';
 
 const Resume = () => {
