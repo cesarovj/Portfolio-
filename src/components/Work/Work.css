@@ -13,10 +13,6 @@
     color: #181818;
 }
 
-.work-arrow {
-    margin-top: 13%;
-}
-
 .work a {
     text-decoration: none;
     color: #3d3d3d;
@@ -126,7 +122,7 @@
 .work-btn {
     display: flex;
     align-items: center;
-    margin-top: 22rem;
+    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -141,24 +137,16 @@
     .my-work {
         margin-top: 8rem;
     }
-    .work-arrow {
-        margin-top: 20%;
-    }
+
     .work-text {
         font-size: 14vw;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .my-work {
-        margin-top: 8rem;
-    }
     .work-text {
         line-height: 0.75;
         font-size: 17vw;
-    }
-    .work-arrow {
-        margin-top: 45%;
     }
 }
 
@@ -166,8 +154,5 @@
     .work-text {
         font-size: 20vw;
         line-height: 1;
-    }
-    .work-arrow {
-        margin-top: 20%;
     }
 }

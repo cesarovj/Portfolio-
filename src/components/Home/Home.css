@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    margin-top: 4rem;
+    margin-top: 10rem;
 }
 
 .my-name,
@@ -25,32 +25,30 @@
     .container {
         margin-top: 8rem;
     }
-    .home-arrow {
-        margin-top: 20%;
-    }
 }
 
 @media screen and (max-width: 600px) {
     .container {
-        margin-top: 6rem;
+        margin-top: 3rem;
+    }
+    .my-name {
+        line-height: 0.85;
+    }
+    .my-role {
+        line-height: 0.75;
     }
     .my-name,
     .my-role {
-        line-height: 0.75;
         font-size: 17vw;
+        width: 75%;
+    }
+    .header-name {
+        margin-left: 50%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .container {
         margin-top: 5rem;
-    }
-
-    .my-name,
-    .my-role {
-        line-height: 1;
-    }
-    .home-arrow {
-        margin-top: 30%;
     }
 }

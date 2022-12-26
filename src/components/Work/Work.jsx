@@ -1,74 +1,106 @@
-import { useRef, useEffect } from 'react';
-import gsap from 'gsap';
 import Navbar from '../Navbar/Navbar';
 import './Work.css';
 import linkDev from '../../assets/linkdev.png';
 import linkedList from '../../assets/linkedlist.png';
 import pokeSearch from '../../assets/pokesearch.png';
-import portfolio from '../../assets/portfolio.png';
+import vault from '../../assets/vaultSite.png';
+import prism from '../../assets/prismSite.png';
 import snakeGS from '../../assets/snakeGS.png';
-import busyBoard from '../../assets/Screenshot from 2022-03-24 13-10-20.png'
+import busyBoard from '../../assets/Screenshot from 2022-03-24 13-10-20.png';
 
 const Work = () => {
-    const workTimeline = gsap.timeline();
-
-    let p1 = useRef(null);
-    let arrow1 = useRef(null);
-
-    useEffect(() => {
-        workTimeline.from([p1, arrow1], {
-            duration: 1,
-            skewY: 10,
-            y: 500,
-            stagger: {
-                amount: 0.4,
-            },
-            opacity: 0,
-        });
-    });
-
     return (
         <div>
             <Navbar />
-            <div className='work'>
-                <div className='my-work'>
-                    <p ref={(el) => (p1 = el)} className='work-text'>
-                        My Work<span className='cursor'></span>
+            <div className="work">
+                <div className="my-work">
+                    <p className="work-text">
+                        My Work<span className="cursor"></span>
                     </p>
                 </div>
-                <div
-                    className='arrow-container work-arrow'
-                    ref={(el) => (arrow1 = el)}
-                >
-                    <div className='arrow'>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <button className='btn work-btn'>
-                    <a href='https://github.com/cesarovj' target='_blank'>
+                <button className="btn work-btn">
+                    <a href="https://github.com/cesarovj" target="_blank">
                         Check out my GitHub
                     </a>
                 </button>
-                <div className='work-container'>
-                    <div className='work-items'>
-                        <div className='work-item'>
+                <div className="work-container">
+                    <div className="work-items">
+                        <div className="work-item">
                             <a
-                                target='_blank'
-                                href='https://young-tundra-98958.herokuapp.com/'
+                                target="_blank"
+                                href="https://enterthevault.app/"
                             >
-                                <div className='work-header'>
-                                    <p className='work-title'>LinkDev</p>
+                                <div className="work-header">
+                                    <p className="work-title">The Vault</p>
                                 </div>
-                                <div className='work-img'>
+                                <div className="work-img">
                                     <img
-                                        className='work-img1'
-                                        src={linkDev}
-                                        alt=''
+                                        className="work-img4"
+                                        src={vault}
+                                        alt=""
                                     />
-                                    <div className='img-overlay'>
-                                        <p className='img-desc'>
+                                    <div className="img-overlay">
+                                        <p className="img-desc">
+                                            Interactive hub with features of
+                                            gaming, user profile, NFT mints, and
+                                            more.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="work-footer">
+                                    <p className="tech-stack">
+                                        React / TypeScript / Nextjs / GraphQL /
+                                        Web3Modal
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="work-item">
+                            <a target="_blank" href="https://updao.app/">
+                                <div className="work-header">
+                                    <p className="work-title">PRISM</p>
+                                </div>
+                                <div className="work-img">
+                                    <img
+                                        className="work-img4"
+                                        src={prism}
+                                        alt=""
+                                    />
+                                    <div className="img-overlay">
+                                        <p className="img-desc">
+                                            The Planet Referendum and
+                                            Independence Sustainability Machine
+                                            (“PRISM”) is a informational and
+                                            voting platform for Planet token
+                                            holders.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="work-footer">
+                                    <p className="tech-stack">
+                                        React / JavaScript / Web3Modal / Axios
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="work-item">
+                            <a
+                                target="_blank"
+                                href="https://young-tundra-98958.herokuapp.com/"
+                            >
+                                <div className="work-header">
+                                    <p className="work-title">LinkDev</p>
+                                </div>
+                                <div className="work-img">
+                                    <img
+                                        className="work-img1"
+                                        src={linkDev}
+                                        alt=""
+                                    />
+                                    <div className="img-overlay">
+                                        <p className="img-desc">
                                             A social network application built
                                             with the MERN Stack where users can
                                             connect and make posts. Features
@@ -79,31 +111,31 @@ const Work = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className='work-footer'>
-                                    <p className='tech-stack'>
+                                <div className="work-footer">
+                                    <p className="tech-stack">
                                         MongoDB / Express / React / Node.js
                                     </p>
                                 </div>
                             </a>
                         </div>
-                        <div className='work-item'>
+                        <div className="work-item">
                             <a
-                                target='_blank'
-                                href='https://fervent-goodall-5572d0.netlify.app/'
+                                target="_blank"
+                                href="https://fervent-goodall-5572d0.netlify.app/"
                             >
-                                <div className='work-header'>
-                                    <p className='work-title'>
+                                <div className="work-header">
+                                    <p className="work-title">
                                         Linked List Visualizer
                                     </p>
                                 </div>
-                                <div className='work-img '>
+                                <div className="work-img ">
                                     <img
-                                        className='work-img2'
+                                        className="work-img2"
                                         src={linkedList}
-                                        alt=''
+                                        alt=""
                                     />
-                                    <div className='img-overlay'>
-                                        <p className='img-desc'>
+                                    <div className="img-overlay">
+                                        <p className="img-desc">
                                             Education through visualization.
                                             Learn the methods of a linked list
                                             with an easy-to-use interface.
@@ -114,29 +146,29 @@ const Work = () => {
                                     </div>
                                 </div>
 
-                                <div className='work-footer'>
-                                    <p className='tech-stack'>React</p>
+                                <div className="work-footer">
+                                    <p className="tech-stack">React</p>
                                 </div>
                             </a>
                         </div>
-                        <div className='work-item'>
+                        <div className="work-item">
                             <a
-                                target='_blank'
-                                href='https://determined-bartik-d482d8.netlify.app/'
+                                target="_blank"
+                                href="https://determined-bartik-d482d8.netlify.app/"
                             >
-                                <div className='work-header'>
-                                    <p className='work-title'>
+                                <div className="work-header">
+                                    <p className="work-title">
                                         Poke&#769;Search
                                     </p>
                                 </div>
-                                <div className='work-img'>
+                                <div className="work-img">
                                     <img
-                                        className='work-img3'
+                                        className="work-img3"
                                         src={pokeSearch}
-                                        alt=''
+                                        alt=""
                                     />
-                                    <div className='img-overlay'>
-                                        <p className='img-desc'>
+                                    <div className="img-overlay">
+                                        <p className="img-desc">
                                             A web application to search for
                                             Poke&#769;mon’s and receive
                                             information relating to its card,
@@ -148,83 +180,59 @@ const Work = () => {
                                     </div>
                                 </div>
 
-                                <div className='work-footer'>
-                                    <p className='tech-stack'>
+                                <div className="work-footer">
+                                    <p className="tech-stack">
                                         JavaScript / HTML5 / CSS3
                                     </p>
                                 </div>
                             </a>
                         </div>
-                    <div className='work-item'>
-                            
-                                <div className='work-header'>
-                                    <p className='work-title'>
-                                        Busy Board
-                                    </p>
-                                </div>
-                                <div className='work-img '>
-                                    <img
-                                        className='work-img6'
-                                        src={busyBoard}
-                                        alt=''
-                                    />
-                                    <div className='img-overlay'>
-                                        <p className='img-desc'>
-                                            A simple easy-to-use admin dashboard. This project helped me learn about React UI libraries, Material UI, and how to incorporate charts into an application, Recharts.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className='work-footer'>
-                                    <p className='tech-stack'>React / Material UI / Recharts</p>
-                                </div>
-                           
-                        </div>
-                        <div className='work-item'>
-                            <div className='work-header'>
-                                <p className='work-title'>This Portfolio</p>
+                        {/* <div className="work-item">
+                            <div className="work-header">
+                                <p className="work-title">Busy Board</p>
                             </div>
-                            <div className='work-img'>
+                            <div className="work-img ">
                                 <img
-                                    className='work-img4'
-                                    src={portfolio}
-                                    alt=''
+                                    className="work-img6"
+                                    src={busyBoard}
+                                    alt=""
                                 />
-                                <div className='img-overlay'>
-                                    <p className='img-desc'>
-                                        Not much to say here since you're on the
-                                        site. This project was to practice with
-                                        React and learn some cool animations
-                                        with GSAP. Also, I needed a site to show
-                                        myself off
+                                <div className="img-overlay">
+                                    <p className="img-desc">
+                                        A simple easy-to-use admin dashboard.
+                                        This project helped me learn about React
+                                        UI libraries, Material UI, and how to
+                                        incorporate charts into an application,
+                                        Recharts.
                                     </p>
                                 </div>
                             </div>
 
-                            <div className='work-footer'>
-                                <p className='tech-stack'>
-                                    React / EmailJS / GSAP
+                            <div className="work-footer">
+                                <p className="tech-stack">
+                                    React / Material UI / Recharts
                                 </p>
                             </div>
-                        </div>
-                        <div className='work-item'>
+                        </div> */}
+
+                        <div className="work-item">
                             <a
-                                target='_blank'
-                                href='https://www.youtube.com/watch?v=hNuHIryq428'
+                                target="_blank"
+                                href="https://www.youtube.com/watch?v=hNuHIryq428"
                             >
-                                <div className='work-header'>
-                                    <p className='work-title'>
+                                <div className="work-header">
+                                    <p className="work-title">
                                         Snake: Grow or Shrink
                                     </p>
                                 </div>
-                                <div className='work-img'>
+                                <div className="work-img">
                                     <img
-                                        className='work-img5'
+                                        className="work-img5"
                                         src={snakeGS}
-                                        alt=''
+                                        alt=""
                                     />
-                                    <div className='img-overlay'>
-                                        <p className='img-desc'>
+                                    <div className="img-overlay">
+                                        <p className="img-desc">
                                             The Snake.io game with a twist. The
                                             player can increase the snake's
                                             length and score, or be penalized
@@ -236,8 +244,8 @@ const Work = () => {
                                     </div>
                                 </div>
 
-                                <div className='work-footer'>
-                                    <p className='tech-stack'>
+                                <div className="work-footer">
+                                    <p className="tech-stack">
                                         Python / PyGame
                                     </p>
                                 </div>

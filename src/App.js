@@ -60,28 +60,28 @@ function App() {
     return (
         <div>
             <Router>
-                <div className='noise-bg'></div>
-                <div className='App'>
-                    <div className='loader' ref={(el) => (loader = el)}>
-                        <div className='progress' ref={(el) => (progress = el)}>
-                            <div id='loading-bar' ref={(el) => (bar = el)}>
+                <div className="noise-bg"></div>
+                <div className="App">
+                    <div className="loader" ref={(el) => (loader = el)}>
+                        <div className="progress" ref={(el) => (progress = el)}>
+                            <div id="loading-bar" ref={(el) => (bar = el)}>
                                 <div
-                                    id='bar-confirm'
+                                    id="bar-confirm"
                                     ref={(el) => (barConfirm = el)}
                                 ></div>
                             </div>
                             <div
-                                id='loading-percent'
+                                id="loading-percent"
                                 ref={(el) => (percent = el)}
                             ></div>
                         </div>
                     </div>
                     <Scroll />
                     <Routes>
-                        <Route exact path='/' element={<Home />} />
-                        <Route exact path='/work' element={<Work />} />
-                        <Route exact path='/resume' element={<Resume />} />
-                        <Route exact path='/about' element={<About />} />
+                        <Route exact path="/" element={<Home />} />
+                        <Route exact path="/work" element={<Work />} />
+                        <Route exact path="/resume" element={<Resume />} />
+                        <Route exact path="/about" element={<About />} />
                     </Routes>
                 </div>
             </Router>

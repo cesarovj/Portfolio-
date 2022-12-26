@@ -55,7 +55,7 @@ body {
     }
 }
 
-.arrow-container {
+/* .arrow-container {
     position: relative;
 }
 
@@ -82,7 +82,7 @@ body {
 
 .arrow span:nth-child(3) {
     animation-delay: -0.4s;
-}
+} */
 
 .btn {
     background-color: #f0f0f0;
