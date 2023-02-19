@@ -13,7 +13,8 @@ const Home = () => {
                 </div>
                 <div className="header-role">
                     <p className="my-role">
-                        Front End Developer<span className="cursor"></span>
+                        Front End Developer
+            <span className="cursor"></span>
                     </p>
                 </div>
             </div>

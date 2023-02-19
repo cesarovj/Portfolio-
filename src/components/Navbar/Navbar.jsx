@@ -8,11 +8,11 @@ const Navbar = () => {
     const navTimeline = gsap.timeline();
     let nameLink = useRef(null);
     let li1 = useRef(null);
-    let li2 = useRef(null);
+  /*   let li2 = useRef(null); */
     let li3 = useRef(null);
 
     useEffect(() => {
-        navTimeline.from([nameLink, li1, li2, li3], {
+        navTimeline.from([nameLink, li1, li3], {
             opacity: 0,
             duration: 1,
             delay: 0.2,
@@ -42,11 +42,11 @@ const Navbar = () => {
                             work
                         </Link>
                     </li>
-                    <li ref={(el) => (li2 = el)}>
-                        <Link to='/resume' className='li'>
-                            resume
-                        </Link>
-                    </li>
+                    {/* <li ref={(el) => (li2 = el)}> */}
+                    {/*     <Link to='/resume' className='li'> */}
+                    {/*         resume */}
+                    {/*     </Link> */}
+                    {/* </li> */}
                     <li ref={(el) => (li3 = el)}>
                         <Link to='/about' className='li'>
                             about

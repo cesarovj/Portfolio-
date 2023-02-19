@@ -1,6 +1,7 @@
 import Navbar from '../Navbar/Navbar';
 import './About.css';
 import Dog from '../../assets/oso.png';
+import resumePdf from '../../assets/my_resume.pdf';
 
 const About = () => {
     return (
@@ -12,7 +13,8 @@ const About = () => {
                         <p className="about-text">Shortly</p>
                         <p className="about-text">About</p>
                         <p className="about-text myself">
-                            Myself<span className="cursor"></span>
+                            Myself
+              <span className="cursor"></span>
                         </p>
                     </div>
                 </div>
@@ -27,10 +29,21 @@ const About = () => {
                 </div>
 
                 <div className="container-text text3">
-                    Skills: <br />
-                    JavaScript / HTML5 / CSS3 <br />
-                    React / TypeScript / Node.js / Express <br /> MongoDB / Git
-                    / Agile
+                    Download my  
+                    <a className='anchor-text' download href={resumePdf}>
+                      {" "}  Resume
+                    </a>
+              <br />
+                       Visit my
+                    <a target={"_blank"} className='anchor-text' href='https://github.com/cesarovj'>
+                       {" "}  Github
+                    </a>
+                  <br />
+                       Visit my
+                    <a target={"_blank"} className='anchor-text' href='https://www.linkedin.com/in/cesarvillalvir/'>
+                      {" "}   LinkedIn
+                    </a>
+
                 </div>
 
                 <div className="about2">

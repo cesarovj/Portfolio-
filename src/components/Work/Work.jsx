@@ -6,7 +6,6 @@ import pokeSearch from '../../assets/pokesearch.png';
 import vault from '../../assets/vaultSite.png';
 import prism from '../../assets/prismSite.png';
 import snakeGS from '../../assets/snakeGS.png';
-import busyBoard from '../../assets/Screenshot from 2022-03-24 13-10-20.png';
 
 const Work = () => {
     return (
@@ -15,14 +14,11 @@ const Work = () => {
             <div className="work">
                 <div className="my-work">
                     <p className="work-text">
-                        My Work<span className="cursor"></span>
+                        My Work
+            <span className="cursor"></span>
                     </p>
                 </div>
-                <button className="btn work-btn">
-                    <a href="https://github.com/cesarovj" target="_blank">
-                        Check out my GitHub
-                    </a>
-                </button>
+              
                 <div className="work-container">
                     <div className="work-items">
                         <div className="work-item">

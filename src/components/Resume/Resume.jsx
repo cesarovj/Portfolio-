@@ -11,7 +11,8 @@ const Resume = () => {
             <div className="my-resume">
                 <p className="resume-text">My</p>
                 <p className="resume-text resume-text2">
-                    Resume<span className="cursor resume-cursor"></span>
+                    Resume
+          <span className="cursor resume-cursor"></span>
                 </p>
             </div>
 

@@ -80,7 +80,7 @@ function App() {
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/work" element={<Work />} />
-                        <Route exact path="/resume" element={<Resume />} />
+                        {/* <Route exact path="/resume" element={<Resume />} /> */}
                         <Route exact path="/about" element={<About />} />
                     </Routes>
                 </div>

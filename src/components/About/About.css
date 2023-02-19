@@ -8,6 +8,11 @@
     margin-bottom: 5rem;
 }
 
+.anchor-text {
+ color: #d53f41;
+ text-decoration: none;
+}
+
 .about-page {
     display: flex;
     flex-direction: column;
